@@ -18,8 +18,9 @@ const VideoDetails = ({ subs }) => {
   const video = useSelector((state) => state.Video.video);
 
   const copyToClipboard = () => {
+    const encryptedId = btoa(video?.id);
     navigator.clipboard.writeText(
-      `https://clone-afc5e.web.app/video?vid=${video.id}`
+      `https://clone-afc5e.web.app/video?vid=${encryptedId}`
     );
     alert.show("Video Link copied to clipboard");
   };
