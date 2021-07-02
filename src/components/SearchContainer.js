@@ -15,7 +15,8 @@ const SearchContainer = ({ searchedVideo, setSearchValue }) => {
           <p
             key={video.item.id}
             onClick={() => {
-              history.push(`/video?vid=${video.item.id}`);
+              const encryptedId = video.item.id;
+              history.push(`/video?vid=${encryptedId}`);
               setSearchValue("");
             }}
           >

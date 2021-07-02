@@ -15,7 +15,8 @@ const VideoColumn = ({ video, randomViews, randomMonth }) => {
   };
 
   const moveToVideoPage = () => {
-    history.push(`/video?vid=${video?.id}`);
+    const encryptedId = btoa(video?.id);
+    history.push(`/video?vid=${encryptedId}`);
     document.title = video?.title;
   };
 

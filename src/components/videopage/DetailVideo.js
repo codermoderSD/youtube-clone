@@ -12,7 +12,8 @@ const DetailVideo = ({ video }) => {
   };
 
   const moveToVideo = () => {
-    history.push(`/video?vid=${video?.id}`);
+    const encryptedId = btoa(video?.id);
+    history.push(`/video?vid=${encryptedId}`);
     document.title = video?.title;
   };
 
