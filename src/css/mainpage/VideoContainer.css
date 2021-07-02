@@ -1,0 +1,13 @@
+.videoContainer {
+  width: 100%;
+  height: max-content;
+  background-color: #181818;
+}
+
+.videoContainer__row {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
