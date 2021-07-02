@@ -19,7 +19,7 @@ const VideoDetails = ({ subs }) => {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(
-      `http://localhost:3000/video?vid=${video.id}`
+      `https://clone-afc5e.web.app/video?vid=${video.id}`
     );
     alert.show("Video Link copied to clipboard");
   };
